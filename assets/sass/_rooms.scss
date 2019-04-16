@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sortby-area{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    select{
+    display: block;
+    line-height: 1.3;
+    padding: .2em .5em .2em .5em;
+    font-size: .8;
+    font-weight: 500;
+    color: $violet;
+    margin-bottom: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    border: 2px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .5em;
+    background-image: linear-gradient(to bottom, #ffffff 0%,#E6E6FA 100%);
+    appearance: none;
+    text-align: center;
+  &:hover{
+    border-color: $darkpurple;
+    background: $lightgray;
+  }
+  &:focus{
+    border-color: $mediumblue;
+box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+box-shadow: 0 0 0 3px -moz-mac-focusring;
+color: #222;
+outline: none;
+  }
+  }
+
+  .sortby{
+    text-align: center;
+  }
+  .results{
+    padding: 10px;
+    color: $violet;
+  }
+
+#sort{
+  font-size: .7em;
+  padding: 5px;
+  color: $darkgray;
+}
+
+}
+
+
+
+#rooms{
+width: 75%;
+float: left;
+display: inline-block;
+padding: 5px;
+background: $lightgray;
+text-align: center;
+margin-left: 15px;
+margin-top: 5px;
+border-radius: 5px;
+}
+
+#rooms-results{
+    margin-bottom: 60px;
+    margin-top: 20px;
+    width: 100%;
+
+  }
+
+.room{
+  -webkit-box-shadow: 0px 9px 54px 0px rgba(229,204,229,1);
+  -moz-box-shadow: 0px 9px 54px 0px rgba(229,204,229,1);
+  box-shadow: 0px 9px 54px 0px rgba(229,204,229,1);
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  border: solid thick $violet;
+  border-radius: 5px;
+  width: 275px;
+  height: 260px;
+  margin:0 auto;
+  &:hover{
+      border: solid thick $aqua;
+      border-radius: 5px;
+  }
+
+}
+
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+  .room-img{
+    color: black;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 200px;
+    -webkit-box-shadow: 0px 9px 54px 0px rgba(229,204,229,1);
+    -moz-box-shadow: 0px 9px 54px 0px rgba(229,204,229,1);
+    box-shadow: 0px 9px 54px 0px rgba(229,204,229,1);
+}
+
+.room-name{
+   color: $violet;
+   background: White;
+   padding: 5px;
+   border-radius: 16px;
+   opacity: 1;
+   transition: all 0.4s ease-in-out;
+   text-shadow: 0px 1px 5px rgba(207,128,248, 1);
+   font-size: 1.3rem;
+   text-transform: capitalize;
+}
+
+.room-details{
+  height: 150px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  top:0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  color: White;
+  background: #fff;
+  border-radius: 5px;
+
+  background: rgb(132,244,236);
+  background: linear-gradient(300deg, rgba(132,244,236,.8) 0%, rgba(100,192,228,.8) 20%, rgba(0,168,255,.8) 100%);
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  &:hover{
+    opacity:1;
+  }
+}
+.col-md-3{
+  margin: 0px;
+  flex: 0 0 calc(45%);
+  align-items: flex-start;
+
+}
+
+.book-btn{
+  background-color: $aqua;
+  padding: 10px;
+  margin: 10px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 150px;
+  transition: background .25s ease-in-out;
+  &:hover{
+    background: $darkpurple;
+    color: White;
+  }
+}
+
+.bottom-info{
+
+
+}
+#amenities-list li{
+  list-style-type: none;
+  display: inline;
+  padding: 5px;
+}
+.price{
+  color: $violet;
+  font-weight: bold;
+}
+.basic-icon{
+    opacity: 0;
+}
+
+#book{
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: $darkgray;
+    border-radius: 5px;
+    font-family: 'Comfortaa',arial, sans-serif;
+    color: White;
+    padding: 15px;
+    a{
+      color: $mediumblue;
+      text-decoration: none;
+    }
+  }
+
+.close-btn{
+    margin: 15px;
+    padding: 5px;
+    color: $mediumblue;
+     background: transparent;
+     border: 2px solid $mediumblue;
+     border-radius: 5px;
+     &:hover{
+       background-color: $mediumblue;
+       color: $darkgray;
+     }
+  }
+  #address{
+    position: relative;
+    height:10%;
+    text-align: center;
+    background: $darkgray;
+    color: White;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+  }
+  .contact-info{
+
+  }
+
+#tagline{
+  padding: 10px;
+  background: $darkgray;
+  color: White;
+}
+
+#lounge-desc{
+  position: absolute;
+  background: $darkpurple;
+  color: White;
+  padding: 15px;
+  margin: 20px;
+  border: solid thin $darkgray;
+  border-radius: 5px;
+}
+
+#start{
+  padding: 0px;
+  margin-top: 5px;
+  margin-bottom: -4px;
+}
+
+@media only screen and (max-width: 700px){
+  .sortby-area{
+    width: 100%;
+  }
+  #rooms{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+
+.sort-options{
+  width: 50%;
+  margin: 0 auto;
+}
+
+#lounge-desc{
+  padding: 5px;
+}
+
+#rooms-results{
+
+}
+.row{
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.col-md-3{
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  flex: none;
+}
+
+.room{
+  width: 100%;
+  min-width: 200px;
+  min-height: 200px;
+  max-width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.room-name{
+  color: black;
+  font-size: .8rem;
+}
+
+.room-details{
+  font-size: .8rem;
+}
+
+.room-name{
+  font-size: .7rem;
+}
+
+#book{
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: $darkgray;
+    border-radius: 5px;
+    font-family: 'Comfortaa',arial, sans-serif;
+    color: White;
+    padding: 15px;
+    a{
+      color: $mediumblue;
+      text-decoration: none;
+    }
+  }
+
+
+}

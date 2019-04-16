@@ -1,0 +1,199 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+@import "variables";
+@import "rooms";
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: $mediumblue;
+  overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+  /*  max-width: 300px; */
+    margin: 0 auto;
+  }
+
+.header-content{
+  background-color:White;
+  border-bottom: solid thick $lightgray;
+}
+
+.logo {
+position: relative;
+text-align: center;
+background: $mediumblue;
+height: 120px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.logo-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: White;
+  font-size: 50px;
+  font-family: 'Julius Sans One', cursive;
+}
+
+.calendar{
+  text-align: center;
+  padding: 15px;
+  margin: 15px;
+}
+.datepicker{
+  width: 100px;
+  text-align: center;
+}
+.ui-datepicker {
+  background: gray;
+  color: White;
+  border: 1px solid DarkGray;
+  useCurrent: true;
+}
+
+.ui-datepicker-next {
+float:right;
+}
+
+.ui-datepicker a {
+text-align:center;
+color: White;
+text-decoration: none;
+}
+
+.ui-datepicker-title {
+text-align: center;
+}
+
+.guests{
+  text-align: center;
+}
+
+.room-type{
+  text-align: center;
+  padding: 10px;
+}
+
+.roomType-label{
+  padding: 10px;
+}
+
+#content-area{
+  overflow: auto;
+  width:100%;
+  min-height: 100vh;
+}
+#filter{
+  color: $darkgray;
+  font-family: "Roboto";
+  background: $lightgray;
+  width: 22%;
+  margin-left: 5px;
+  margin-top: 5px;
+  display: inline-block;
+  float: left;
+  max-width: 300px;
+  border: solid thick #lightgray;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 9px 54px 0px rgba(229,204,229,1);
+  -moz-box-shadow: 0px 9px 54px 0px rgba(229,204,229,1);
+  box-shadow: 0px 9px 54px 0px rgba(229,204,229,1);
+
+  .amenities{
+    text-align: center;
+    padding: 5px;
+  }
+
+
+}
+.amenities-checkbox{
+  text-align: right;
+  margin-right: 30px;
+  padding: 15px;
+}
+[class*= 'col-']{
+  float: left;
+  padding: 1em;
+  width: 100%;
+  min-height: 1px;
+  display: inline-block;
+}
+
+#filter-instructions{
+  text-align: center;
+}
+@media only screen and (max-width: 700px){
+.logo{
+  width: 95vw;
+  height: 15vh;
+  }
+  .logo-text{
+    font-size: 1.2rem;
+  }
+
+  #content-area{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 2px;
+  }
+
+#filter{
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: none;
+  border-radius: 5px;
+}
+
+
+.guests{
+float: left;
+padding: none;
+padding-left: 20%;
+
+}
+
+.room-type{
+float: right;
+padding: 0px;
+padding-right: 20%;
+}
+
+.amenities{
+  width: 100%;
+  padding: 0px;
+  display: inline-block;
+  margin-top: 25%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#extras{
+  width: 75%;
+  margin: 0 auto;
+
+  padding: 10px;
+}
+.amenities-checkbox{
+  width: 100%;
+  padding: 0px;
+  float: left;
+  text-align: left;
+  margin-right: 0;
+  padding: 5px;
+}
+.checkbox{
+  float: right;
+}
+
+}
+.footer-content{
+
+}
